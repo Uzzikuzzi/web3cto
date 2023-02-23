@@ -28,34 +28,3 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
-// portfolio slider
-
-const slider = document.querySelector(".portfolio-slider-container");
-const slideImages = document.querySelectorAll(".slider-item img");
-const prevBtn = document.querySelector("#cprev");
-const nextBtn = document.querySelector("#cnext");
-
-let counter = 1;
-const size = slideImages[0].clientWidth;
-
- slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-nextBtn.addEventListener('click', () => {
-    
-    slider.style.transition = "1s all";
-    counter++;
-    slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    if ( slideImages.length -1){
-        nextBtn.disabled = true;
-        
-    }
-   
-});
-prevBtn.addEventListener('click', () => {
-    slider.style.transition = "1s all";
-    counter--;
-    slider.style.transform = 'translateX(' + (size * counter) + 'px)';
-    if ( slideImages.length +1){
-        prevBtn.disabled = true;
-    }
-});
