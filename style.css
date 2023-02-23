@@ -45,7 +45,11 @@ ul li{
     justify-content: center;
     align-items: center;
 }
-
+.start-logo img{
+  width: 100%;
+  max-width: 20%;
+  padding-top:10px
+}
 #home{
 height: 100vh;
 background: var(--bg-light);
@@ -96,9 +100,15 @@ isolation: isolate;
     position: relative;
     display: block;
     z-index: 20;
+  transition: .5s all;
 }
+.c-btn-lg:hover{
+   padding: 15px 50px;
+  color: var(--clr-white)
+}
+
 .hero-content{
-  padding-top: 100px;
+  padding-top: 36px;
 }
 .hero-content .actions{
     position: relative;
@@ -350,10 +360,10 @@ transition: 1s all cubic-bezier(.86,-0.13,.36,.99);
   }
   .portfolio-slider-controls #cnext:hover:before{
     width: 150px;
-    right: -210%;
+    right: -228%;
   }
   .portfolio-slider-controls #cnext:hover:after{
-    right: -210%;
+    right: -228%;
   }
   
   /*=== keyframes === */
