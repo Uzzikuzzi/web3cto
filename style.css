@@ -600,7 +600,7 @@ transition: .5s all;
 /* media query */
 @media(max-width: 500px){
     .cwrap{
-    height:85vh;
+    height:95vh;
     }
   .start-logo {
     justify-content: flex-start !important;
