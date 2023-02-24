@@ -288,8 +288,8 @@ animation: 1s ease slideinDownLeft;
   position: absolute;
   width: 120px;
   height: 120px;
-  top: -12%;
-  left: 40%;
+  top: -8%;
+  left: 22%;
   background: url("/assets/latestprojects.png") no-repeat;
     background-size: auto;
   background-size: contain;
@@ -718,7 +718,10 @@ background: url(assets/squigly.png) no-repeat;
 background-size: contain;
 
 }
-
+    .hero-portfolio::after{
+    
+    left: 40%;
+    }
 
 }
 /* end of media query */
