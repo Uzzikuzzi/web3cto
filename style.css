@@ -616,7 +616,17 @@ transition: .5s all;
 .hamburger-menu-container{
   display: none;
 }
-/* media query */
+/* === media query tablet === */
+@media(max-width: 810px){
+  .navigation{
+    max-width: 90%;
+  }
+  .navigation > ul li a{
+    font-size: 12px
+  }
+}
+
+/* === media query mobile ===*/
 @media(max-width: 500px){
     .cwrap{
     height:95vh;
