@@ -50,7 +50,7 @@ overflow-x:hidden;
 }
 .start-logo img{
   width: 100%;
-  max-width: 19%;
+  max-width: 14%;
   padding-top:10px
 }
 #home{
@@ -61,7 +61,7 @@ isolation: isolate;
 .navigation{
     background: var(--clr-lite-black);
     width: 100%;
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
     margin-top: 20px;
 }
