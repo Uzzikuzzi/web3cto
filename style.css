@@ -79,6 +79,11 @@ isolation: isolate;
   position:relative;
   
 }
+.aactive{
+  -webkit-text-fill-color: var(--clr-black) !important;
+text-decoration: underline;
+color: #000000;
+}
 .navigation > ul li a:not(.navigation ul li:last-of-type a):before{
   content: "";
   width: 0%;
