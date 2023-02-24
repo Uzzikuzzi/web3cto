@@ -72,6 +72,23 @@ isolation: isolate;
 .navigation ul li a:hover{
   color: var(--bg-prime);
 }
+.navigation > ul li a{
+  font-size: 18px;
+  position:relative;
+  
+}
+.navigation > ul li a:not(.navigation ul li:last-of-type a):before{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--clr-white);
+  position: absolute;
+  bottom: -2px;
+  transition: 0.5s all cubic-bezier(.86,-0.13,.36,.99);
+}
+.navigation > ul li a:hover:before{
+  width: 100% !important;;
+}
 .trigger-menu-wrapper {
   position: fixed;
   top: 0;
