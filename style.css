@@ -131,6 +131,23 @@ isolation: isolate;
 }
 
 /* elements */
+.slider-item.featured{
+  position: relative;
+  overflow: visible !important;
+}
+.slider-item.featured::before{
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: -12%;
+  left: -10%;
+  background: url("/assets/latestprojects.png") no-repeat;
+  background-size: contain;
+}
+.owl-stage-outer{
+  overflow: visible !important;
+}
 #home::before{
     content: "";
       position: absolute;
