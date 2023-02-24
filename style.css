@@ -571,6 +571,19 @@ transition: .5s all;
     opacity: 1;
   }
 }
+@keyframes slideinRotate2 {
+  0% {
+    transform: translate(100% , 100%) rotate(0deg);
+
+    
+   
+  }
+
+  100% {
+    transform: translate(0% , 0%)  rotate(140deg);
+    opacity: 1;
+  }
+}
 .hamburger-menu-container{
   display: none;
 }
@@ -661,8 +674,41 @@ max-width: 14%;
   display: block !important;
 }
 
+.grey-circle::before{
+  bottom:20%;
+  right: 85%
+}
+.red-circle{
+  width: 120px;
+height: 120px;
+bottom: -7%;
+  animation: 2s ease 0.5s both slideinRotate2;
+}
+.squigly{
+  bottom:2%;
+  left: 27%;
+  width: 50px;
+}
+
+.blue-circle{
+  width: 120px;
+height: 120px;
+  bottom: -7%;
+}
+.grey-circle::after{
+  position: absolute;
+bottom: 8%;
+right: 7%;
+width: 100px;
+height: 17px;
+background: url(assets/squigly.png) no-repeat;
+background-size: contain;
 
 }
+
+
+}
+/* end of media query */
 
 
 
