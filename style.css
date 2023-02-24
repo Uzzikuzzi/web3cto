@@ -288,6 +288,9 @@ animation: 1s ease slideinDownLeft;
   padding-bottom: 100px;
   
  }
+.portfolio-slider-container{
+  overflow-x: hidden;
+}
  .owl-dots{
   display: none
 }
