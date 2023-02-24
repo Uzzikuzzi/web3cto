@@ -404,10 +404,10 @@ animation: 1s ease slideinDownLeft;
     }
   .portfolio-slider-container .owl-next:hover:before{
       width: 150px;
-      right: -140%;
+      right: -129%;
     }
   .portfolio-slider-container .owl-next:hover:after{
-      right: -140%;
+      right: -129%;
     }
    
      /* =============== mobile menu ==================*/
