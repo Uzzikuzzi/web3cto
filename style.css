@@ -1143,7 +1143,7 @@ animation-timing-function: ease-in-out;
 
 #faq{
   position: relative;
-  padding: 150px 0px;
+  padding: 220px 0px 180px 0px;
 }
 
 .accordion-button:focus{
@@ -1175,6 +1175,36 @@ animation-timing-function: ease-in-out;
   font-size: 24px;
   padding-bottom: 40px;
 }
+/* elements */
+
+#faq .heading-h2::before {
+
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 6%;
+  right: 0;
+  margin: 0 auto;
+  background: url("assets/ocstar-green.png") no-repeat;
+      background-size: auto;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+
+}
+#faq .heading-h2::after {
+  content: "";
+  position: absolute;
+  top: -90px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url("assets/ocstar-yellow.png") no-repeat;
+    background-size: auto;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
 /* =========technologies========== */
 #technologies{
   background: var(--bg-prime);
@@ -1204,7 +1234,7 @@ animation-timing-function: ease-in-out;
 }
 .author_details > img{
   width: 100%;
-  max-width: 35%;
+  max-width: 28%;
     padding: 30px
     
 }
@@ -1570,13 +1600,17 @@ animation-timing-function: ease-in-out;
 /* ========== Pricing ========== */
 #pricing{
   background-color: var(--clr-accent);
-  padding: 150px 0px;
+  padding: 150px 0px 200px 0px;
+  overflow-x: hidden;
+  position: relative;
 }
 .pricing_wrap{
   display: flex;
   flex-direction: column;
   border-radius:20px;
-  margin-top:50px;
+  margin-top:100px;
+  position: relative;
+  z-index: 2;
 }
 .pricing_grid{
   background: var(--clr-white);
@@ -1601,7 +1635,7 @@ animation-timing-function: ease-in-out;
 .pricing_grid_col .pricing_grid_col-top{
   padding: 30px;
   border-bottom: 3px solid var(--clr-accent);
-  height:400px;
+  height:333px;
   position: relative;
   isolation: isolate;
 }
@@ -1638,6 +1672,122 @@ animation-timing-function: ease-in-out;
 .pricing_grid_col.col2 .pricing_grid_col-top .price-btn{
   background: var(--clr-white) !important;
   color: var(--clr-black);
+}
+/* elements */
+#pricing::before{
+  content: "";
+  width: 80px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(assets/dots.png) no-repeat;
+  background-size: contain;
+}
+#pricing::after{
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 120px;
+  left: 40px;
+  background: #F57025;
+  border-radius: 50%;
+}
+#pricing .squigly{
+  top: 45px;
+  animation: none;
+}
+#pricing .squigly2{
+  position: absolute;
+  top: 0;
+  right: 176px;
+  width: 70px;
+}
+#pricing .dots2 {
+  position: absolute;
+  top: 60px;
+  right: 16%;
+  width: 20px;
+  height: 80px;
+}
+#pricing .red-circle2{
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  width: 200px;
+}
+.spinner {
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 3%;
+  right: 24%;
+  
+  width: 50px;
+  height: 50px;
+}
+.spinner .path {
+  stroke: #F24E3D;
+  stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+#pricing .container{
+  position: relative;
+}
+#pricing .container::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -6%;
+  right: 5%;
+  background: transparent;
+  border: 10px solid #83CA9E;
+  border-radius: 50%;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+#pricing .container::after{
+  content: "";
+  position: absolute;
+  border: 2px solid #F24E3D;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  bottom: -30px;
+  right: 20%;
+}
+.pricing_wrap::before{
+  content: "";
+  position: absolute;
+  border: 15px solid #949399;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  bottom: -18%;
+  right: 10%;
+}
+#pricing .dots3{
+  position: absolute;
+  bottom: 100px;
+  right: 16%;
+  width: 20px;
+  height: 80px;
+}
+#pricing .blue-circle{
+  position: absolute;
+  bottom: 3%;
+  transform: rotate(-60deg) !important;
+}
+.price-btn-b{
+  background: var(--clr-white);
+  color: var(--clr-black);
+  padding: 8px 30px;
+  border-radius: 20px; 
 }
   /*================ keyframes ================== */
   
@@ -1747,6 +1897,25 @@ animation-timing-function: ease-in-out;
     transform: rotate(360deg);
   }
  }
+ @keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
 .hamburger-menu-container{
   display: none;
 }
