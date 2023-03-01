@@ -121,7 +121,7 @@ color: #000000;
 .navigation ul li:last-of-type a{
     background: var(--clr-white);
     color: var(--clr-black);
-    padding: 10px 30px;
+    padding: 8px 25px;
     border-radius: 40px;
     display: block;
 }
@@ -1144,6 +1144,7 @@ animation-timing-function: ease-in-out;
 #faq{
   position: relative;
   padding: 220px 0px 180px 0px;
+  isolation: isolate;
 }
 
 .accordion-button:focus{
@@ -1205,10 +1206,39 @@ animation-timing-function: ease-in-out;
   width: 30px;
   height: 30px;
 }
+#faq::before{
+  content: "";
+  background: url(assets/green-hat.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  width: 40%;
+  height: 40%;
+}
+#faq::after{
+  content: "";
+  background: url(assets/yellow-hat.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -34%;
+  top: 0;
+  width: 40%;
+  height: 40%;
+}
+#faq .squigly-circle{
+position: absolute;
+width: 150px;
+height: 150px;
+left: -2%;
+top: 5%;
+animation: loading 8s linear infinite;
+}
 /* =========technologies========== */
 #technologies{
   background: var(--bg-prime);
-
+  position: relative;
+  padding: 130px 0px;
 }
 .tecnologies_cards-wrap{
   display: flex;
@@ -1228,7 +1258,59 @@ animation-timing-function: ease-in-out;
   font-size: 22px;
   text-transform: uppercase;
 }
-/* ============socials authot details=========== */
+/* elements */
+#technologies .heading-h2{
+  padding-bottom: 100px;
+}
+#technologies .heading-h2 span{
+  position: relative;
+}
+#technologies .heading-h2 span::after{
+  content: "";
+  position: absolute;
+  bottom: -170%;
+  left: 0;
+  width: 100%;
+  height: 139%;
+  background: url(assets/2point-line2.png) no-repeat;
+  background-size: cover;
+}
+#technologies::before{
+  content: "";
+position: absolute;
+left: -1%;
+bottom: 10%;
+width: 150px;
+height: 150px;
+background: url(assets/hex-star-yellow.png) no-repeat;
+  background-size: auto;
+background-size: contain;
+animation: loading 8s linear infinite;
+}
+#technologies::after{
+  content: "";
+position: absolute;
+top: -10%;
+right: 0;
+width: 300px;
+height: 300px;
+background: url(assets/tricolor.png) no-repeat;
+  background-size: auto;
+background-size: contain;
+}
+.curved-tosection{
+  position: absolute;
+  top: -5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+}
+/* ============socials author details=========== */
+#socials{
+  position: relative;
+  padding: 150px 0px;
+}
 .author_details{
   padding: 40px 0px
 }
@@ -1275,6 +1357,22 @@ animation-timing-function: ease-in-out;
 }
 .author_cta-card-details .actions{
   padding-top: 80px;
+}
+/* elements */
+#socials::before{
+  content: "";
+position: absolute;
+width: 60px;
+height: 60px;
+top: 9%;
+right: 17%;
+background: transparent;
+border: 10px solid #83CA9E;
+border-radius: 50%;
+animation-name: floating;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
 }
 /* ============= footer ============= */
 #site-footer{
@@ -1601,7 +1699,7 @@ animation-timing-function: ease-in-out;
 #pricing{
   background-color: var(--clr-accent);
   padding: 150px 0px 200px 0px;
-  overflow-x: hidden;
+
   position: relative;
 }
 .pricing_wrap{
@@ -2342,8 +2440,15 @@ background-size: contain;
   width: 95px;
   height: 117px;
 }
- 
+.navigation > ul li a{
+  font-size: 14px;
+} 
+.focus-tl-pointer{
+  top: -34%;
+  width: 54%;
 }
+}
+/* tablet */
 @media(max-width: 810px){
   .ourBenefits_benefits-card{
     min-height: 280px;
@@ -2407,12 +2512,3 @@ background-size: contain;
 
 
 /* end of media query */
-
-
-
-
-
-
-
-
- 
