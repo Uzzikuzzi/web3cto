@@ -522,7 +522,7 @@ animation: 1s ease slideinDownLeft;
   transition: transform 1.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 .mobile-menu_menu li a{
-  font-size: 45px;
+  font-size: 33px;
   font-weight: 800;
   -webkit-text-stroke: 1px var(--clr-lite-black);
 -webkit-text-fill-color: transparent;
@@ -2252,7 +2252,6 @@ bottom: 40%;
     .cwrap{
     height:100vh;
     }
-  
     .heading-h2{
       font-size: calc(32px + (40 - 32) * ((100vw - 300px) / (1600 - 300)));
     }
@@ -2336,6 +2335,19 @@ max-width: 14%;
   .portfolio-slider-container .owl-next{
     width: 60px
   }
+    .tab-content {
+        min-height: auto;
+        max-width: 90%;
+    }
+    .tab-pane .content-text {
+  font-size: 15px;
+}
+    .testimonial-user h6 {
+        font-size: 20px;
+    }
+    .testimonial-user p {
+  font-size: 13px;
+}
   /* mobile menu */
   
 
