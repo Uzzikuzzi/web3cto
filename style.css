@@ -11,7 +11,7 @@
     --clr-lite-black: #1A1A1A;
     --font-secondary: 'Archivo Black', sans-serif;
 }
-body{
+body,.site-wrapper{
   overflow-x: hidden;
 }
 *,::before,::after{
