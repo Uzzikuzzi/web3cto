@@ -65,7 +65,7 @@ overflow: hidden;
 .navigation{
     background: var(--clr-lite-black);
     width: 100%;
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
     margin-top: 20px;
     position: relative;
@@ -497,7 +497,7 @@ animation: 1s ease slideinDownLeft;
  
 .mobile-menu_menu{
   padding-left: 0px;
-  padding-top: 100px;
+  padding-top: 80px;
   position: relative;
 }
 .mobile-menu_menu::before{
@@ -507,8 +507,8 @@ animation: 1s ease slideinDownLeft;
   height: 230px;
   border: 5px solid #1BADF2;
   transform: rotate(60deg);
-  bottom: -35%;
-  right: -10%;
+  bottom: -44%;
+  right: -42%;
 }
 .mobile-menu_menu::after{
   content: "";
@@ -569,6 +569,12 @@ transition: .5s all;
   width: 100%;
   height: 30px;
  }
+ .testimonials-container ul button:not(.active, .test3 button){
+  filter: grayscale(100%);
+}
+.testimonials-container ul li button:hover{
+    filter: grayscale(0%);
+}
  /*=== testimonials items ===*/
  .nav-tabs{
   border: none;
@@ -702,7 +708,7 @@ z-index: 2;
   font-size: 20px;
   line-height: 1.7;
 }
-.testimonial-user h6{
+.testimonial-user h5{
   font-size: 25px;
   font-weight: 700;
   margin-top: 30px;
@@ -1162,6 +1168,7 @@ animation-timing-function: ease-in-out;
   
   border: none !important;
   box-shadow: none;
+  background-color: transparent;
 }
 .accordion-item{
   border: none;
@@ -1277,7 +1284,7 @@ animation: loading 8s linear infinite;
   background-size: cover;
 }
 #technologies::before{
-  content: "";
+content: "";
 position: absolute;
 left: -1%;
 bottom: 10%;
@@ -1289,7 +1296,7 @@ background-size: contain;
 animation: loading 8s linear infinite;
 }
 #technologies::after{
-  content: "";
+content: "";
 position: absolute;
 top: -10%;
 right: 0;
@@ -2342,7 +2349,7 @@ max-width: 14%;
     .tab-pane .content-text {
   font-size: 15px;
 }
-    .testimonial-user h6 {
+    .testimonial-user h5 {
         font-size: 20px;
     }
     .testimonial-user p {
@@ -2427,6 +2434,12 @@ max-width: 106%;
       width: 190px;
       height: 190px;
     }
+    #technologies .heading-h2 span::after{
+      height: 100%;
+      background-size: contain;
+      margin: 0 auto;
+      background-position: center;
+    }
     .author_details > img{
       max-width: 71%;
     }
@@ -2474,10 +2487,11 @@ max-width: 106%;
       align-items: center;
     }
    
+ 
   }
 @media(min-width: 1920px){
   .navigation{
-    max-width: 60%
+    max-width: 75%
   }
 }
 /* laptop */
