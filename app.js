@@ -1,5 +1,3 @@
-
-// sdsd
 const body = document.body;
 const triggerMenu = document.querySelector(".trigger-menu");
 const scrollUp = "scroll-up";
@@ -31,31 +29,25 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
-function openTest(evt, testimonial) {
-  var i, tabcontent, tablinks;
-
-  tabcontent = document.getElementsByClassName("tab-pane");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("nav-link");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(testimonial).style.display = "block";
-  evt.currentTarget.className += " active";
-}
 
 // intersection observer
 const lined = document.querySelector(".focus-tl-pointer");
+const line = document.querySelector(".line");
 const qline = document.querySelector(".qline");
 const sect = document.querySelector("#focus-tl");
 const sect2 = document.querySelector("#whoWeare");
+const sect3 = document.querySelector("#softdev");
 let options = {
   root: sect,
 }
 let option2 = {
   root: sect2,
+}
+
+let option3 = {
+  root: sect3,
+  rootMargin: 100,
+  threshold: 1 ,
 }
 const lineobserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -79,6 +71,19 @@ const lineobserver2 = new IntersectionObserver((entries) => {
   }, option2);
 });
 lineobserver2.observe(qline);
+
+
+const lineobserver3 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+    }
+    else{
+      entry.target.classList.remove("active");
+    }
+  }, option2);
+});
+lineobserver2.observe(line);
 
 // end
 const sections = document.querySelectorAll("section");
