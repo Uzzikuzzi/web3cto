@@ -700,6 +700,12 @@ z-index: 2;
   background-size: contain;
 }
 /*========== tab content ============*/
+.tab-pane{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 .tab-pane h1{
   color: #EA343F;
 }
@@ -2343,11 +2349,13 @@ max-width: 14%;
     width: 60px
   }
     .tab-content {
-        min-height: auto;
+        
+     width: 350px;
+      height: 350px;
         max-width: 90%;
     }
     .tab-pane .content-text {
-  font-size: 15px;
+  font-size: 14px !important;
 }
     .testimonial-user h5 {
         font-size: 20px;
@@ -2355,6 +2363,7 @@ max-width: 14%;
     .testimonial-user p {
   font-size: 13px;
 }
+  
   /* mobile menu */
   
 
@@ -2654,12 +2663,18 @@ height: 74px;
     gap: 30px;
     margin-top: 50px
   }
+    .tab-pane{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
   .tab-content {
   width: 450px;
   height: 450px;
  position: unset;
     transform: none;
-    margin: auto
+    margin: auto;
 }
   .testimonials-container ul{
     display: flex;
