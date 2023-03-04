@@ -2350,8 +2350,8 @@ max-width: 14%;
   }
     .tab-content {
         
-     width: 350px;
-      height: 350px;
+     width: 350px !important;
+      height: 350px !important;
         max-width: 90%;
     }
     .tab-pane .content-text {
