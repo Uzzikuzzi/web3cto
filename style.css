@@ -467,7 +467,7 @@ animation: 1s ease slideinDownLeft;
 
  }
  .mobile-menu{
-  position: absolute;
+  position: fixed;
   width: 500px;
   height: 100%;
   padding: 50px;
