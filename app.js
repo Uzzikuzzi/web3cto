@@ -1,5 +1,6 @@
 const body = document.body;
 let mobLink = document.querySelectorAll(".mob-link");
+let mobilex = document.querySelector(".mobilex");
 let checkbox = document.querySelector(".switch");
 const triggerMenu = document.querySelector(".trigger-menu");
 const scrollUp = "scroll-up";
@@ -12,9 +13,11 @@ let lastScroll = 0;
 mobLink.forEach(ml => {
   ml.addEventListener('click', () => {
     checkbox.checked = false;
-    
   })
-})
+});
+mobilex.addEventListener('click', () => {
+  checkbox.checked = false;
+});
 
 
 
