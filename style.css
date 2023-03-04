@@ -498,12 +498,12 @@ animation: 1s ease slideinDownLeft;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding: 
+   
 }
 .mobilex {
   width: 50px;
   height: 50px;
- 
+  cursor:pointer;
   padding: 10px
 }
 .mobilex span{
