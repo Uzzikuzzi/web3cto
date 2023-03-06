@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="Calling" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path d="M3.23816 8.00113C4.03656 6.67468 8.44289 1.86157 11.5834 2.00306C12.5238 2.14632 13.3863 2.60837 14.0266 3.31182V3.31182C16.4436 5.85756 18.5371 8.6919 20.2596 11.7506C20.8787 14.7016 17.3566 16.4045 18.4228 19.3808C19.6775 22.6002 21.5872 25.5238 24.0311 27.9663C26.4749 30.4089 29.3996 32.3171 32.6196 33.57C35.5934 34.6488 37.2963 31.1319 40.2473 31.7433C43.3064 33.4662 46.1408 35.5606 48.6861 37.9789V37.9789C49.3891 38.6191 49.8503 39.4818 49.9923 40.422C50.1085 43.7293 44.9973 48.1963 44.0018 48.7597C41.6521 50.4424 38.5848 50.4121 34.8455 48.6738C24.4209 44.3408 7.74556 27.9812 3.32407 17.1625C1.63127 13.4358 1.51757 10.3407 3.23816 8.00113Z" stroke="#1A1A1A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,149.28233337402344"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,0,149.28233337402344; 
+          0,74.64116668701172,74.64116668701172,0; 
+          149.28233337402344,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<path d="M32.4833 2.63477C37.0241 3.13923 41.2584 5.17265 44.4911 8.40117C47.7237 11.6297 49.7626 15.8614 50.2728 20.4016" stroke="#1A1A1A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,27.152462005615234"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,0,27.152462005615234; 
+          0,13.576231002807617,13.576231002807617,0; 
+          27.152462005615234,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<path d="M32.4833 11.5864C34.6705 12.0117 36.6809 13.0806 38.2565 14.6562C39.8321 16.2318 40.901 18.2422 41.3263 20.4294" stroke="#1A1A1A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,13.27107048034668"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,0,13.27107048034668; 
+          0,6.63553524017334,6.63553524017334,0; 
+          13.27107048034668,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<setting>{"type":"direct","speed":20,"random":1,"shift":1,"size":1,"rupture":50}</setting></svg>
