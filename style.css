@@ -2576,7 +2576,7 @@ max-width: 106%;
       top: -128px;
     }
     .another-testimonial p::after{
-       top: -51px;
+       top: -51px !important;
     left: 61px;
       width: 78px;
   height: 65px;
