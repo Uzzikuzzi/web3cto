@@ -2522,6 +2522,12 @@ max-width: 106%;
     .author_details > img{
       max-width: 71%;
     }
+      .spar-circle{
+    top: -3%;
+    right: -7%;
+    width: 100px;
+    height: 100px;
+  }
     /* elements */
     #socials .orange-circle2{
       width: 130px;
