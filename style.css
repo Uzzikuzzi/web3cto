@@ -1514,7 +1514,7 @@ border-radius: 50%;
   min-height: 100px;
   display: flex;
   position: relative;
-    
+  background: var(--clr-white);
 }
 .focus_tl-col .focus_tl-col-head h3{
   margin: auto;
@@ -1787,9 +1787,6 @@ border-radius: 50%;
   position: relative;
 }
 
-.pricing_grid_col-top h3{
-  font-size: calc(22px + (38 - 22) * ((100vw - 300px) / (1600 - 300)));
-}
 
 .pricing_wrap{
   display: flex;
@@ -1848,7 +1845,7 @@ border-radius: 50%;
    color: #fff !important;
  }
  .pricing_grid_col-top h3{
-  font-size: calc(22px + (35 - 22) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(32px + (35 - 32) * ((100vw - 300px) / (1600 - 300)));
 }
 .pricing_grid_col-top p{
   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -2292,25 +2289,14 @@ border-radius: 50%;
   .focus-tl-pointer{
     display: none;
   }
-  .focus_tl-col.col1 .focus-item.lg {
-    min-height: 150px;
-  }
-  .focus_tl-col.col1 .focus-item.lg::before {
-    
-    height: 47px;
-    top: -38%;
-    
-  }
+
   
 #build::before {
 
-
   left: -4%;
   bottom: 5%;
- 
   width: 70px;
   height: 70px;
- 
 
 }
 #build::after {
@@ -2402,7 +2388,7 @@ bottom: 40%;
 top: 16%;
 max-width: 14%;
   }
-  /* carosel navigation */
+  /*======= carosel navigation =======*/
   .owl-nav{
     padding-right: 100px;
     
@@ -2497,7 +2483,9 @@ background-size: contain;
 width: 100%;
 max-width: 106%;
 }
-    
+.pricing_grid_col .pricing_grid_col-top{
+  height: 270px;
+} 
 .portfolio-slider-container .owl-prev:hover:before{
    width: 85px;
 }
@@ -2509,6 +2497,11 @@ max-width: 106%;
    width: 10px;
    height: 10px;
    right: -63%;
+}
+
+.focus_tl-col.col1 .focus-item.lg::before{
+  z-index: -1;
+  height: 100px;
 }
     .ourBenefits_benefits-wrap{
       flex-direction: column;
@@ -2625,7 +2618,18 @@ max-width: 106%;
         flex-direction: column;
         align-items: center;
       }
-    
+      .ourBenefits_benefits-card{
+        min-height: 205px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }  
+      .ourBenefits_benefits-card:last-child{
+        border-bottom: none !important;
+      }
+  
+   
     }
 @media(min-width: 1920px){
   .navigation{
